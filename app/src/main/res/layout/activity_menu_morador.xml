@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".menu_morador"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="205dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:text="BEM VINDO!"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/bt_atualizar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginTop="150dp"
+        android:background="#03A9F4"
+        android:text="MORADORES"
+        android:textColor="#F8F4F4" />
+
+    <Button
+        android:id="@+id/bt_visitante"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:background="#03A9F4"
+        android:text="AUTORIZAR VISITANTE"
+        android:textColor="#F8F4F4" />
+
+    <Button
+        android:id="@+id/bt_sair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="172dp"
+        android:background="#03A9F4"
+        android:text="SAIR"
+        android:textColor="#F8F4F4" />
+
+</LinearLayout>
