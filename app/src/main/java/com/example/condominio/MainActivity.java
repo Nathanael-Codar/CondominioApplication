@@ -57,6 +57,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String Cpf = edit_cpf_login.getText().toString();
         String SenhaLogin = edit_senha_login.getText().toString();
 
+        Cpf = formataDados(Cpf);
+
         BancoController bd = new BancoController(getBaseContext());
 
         Cursor dados = bd.carregaDadosLogin(Cpf, SenhaLogin);
@@ -75,4 +77,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Toast.makeText(getApplicationContext(), msg, Toast.LENGTH_LONG).show();
         }
     }
+
+    static String formataDados(String dado){
+        dado = dado.replaceAll("\\.","");
+        dado = dado.replaceAll("\\-","");
+        return dado;
+    }
+
 }

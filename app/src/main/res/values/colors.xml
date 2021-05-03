@@ -8,4 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="colorPadrao">#03A9F4</color>
+    <color name="grad">
+        <gradient
+            angle="45" centerX="35%"
+            centerColor="#99FFE4"
+            tartColor="#1ECDE8"
+            endColor="#549EFF"
+            type="linear"
+            />
+    </color>
 </resources>

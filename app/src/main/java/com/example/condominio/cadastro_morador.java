@@ -49,6 +49,8 @@ public class cadastro_morador extends AppCompatActivity {
                 String senhaCad = editSenha.getText().toString();
                 String confirmaSenhaCad = editConfirmaSenha.getText().toString();
 
+                cpfCad = formataDados(cpfCad);
+
                 BancoController bd = new BancoController(getBaseContext());
                 String resultado;
 
@@ -65,6 +67,12 @@ public class cadastro_morador extends AppCompatActivity {
             }
         });
 
+    }
+
+    static String formataDados(String dado){
+        dado = dado.replaceAll("\\.","");
+        dado = dado.replaceAll("\\-","");
+        return dado;
     }
 
     public void limparSenhas() {
